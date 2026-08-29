@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Get a Quote | Cuppan Insurance Consultants CC</title>
+<meta name="description" content="Request a personal or business insurance quote from Cuppan Insurance Consultants CC." />
+<link rel="icon" href="assets/images/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo.png" alt="Cuppan Insurance Consultants CC logo" />
+      <span class="brand-name">Cuppan Insurance<span>Consultants CC</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a href="quote.html" class="btn btn-navy">Get a Quote</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="deco-circle" style="width:200px;height:200px;top:-100px;right:80px;opacity:0.1;"></div>
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">Home</a> / Get a Quote</p>
+    <h1>Tell us about your cover needs.</h1>
+    <p>Fill in the form below and we'll be in touch with a quotation. The more detail you can give us, the faster we can help.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="quote-tabs">
+      <button class="quote-tab active" data-target="panel-personal">Personal &mdash; Home &amp; Motor</button>
+      <button class="quote-tab" data-target="panel-business">Business &mdash; Commercial, Transport, Construction, Agri &amp; Travel</button>
+    </div>
+
+    <!-- ============ PERSONAL QUOTE FORM ============ -->
+    <div class="quote-panel active" id="panel-personal">
+      <form class="form-card" action="https://formspree.io/f/your-form-id" method="POST" data-success="personal-success" id="personal">
+
+        <div class="form-section-title">Your Details</div>
+        <div class="grid-2">
+          <div class="field-wrap"><label class="field-label">Full name</label><input class="field" type="text" name="full_name" required /></div>
+          <div class="field-wrap"><label class="field-label">Identity number</label><input class="field" type="text" name="id_number" required /></div>
+        </div>
+        <div class="grid-2">
+          <div class="field-wrap"><label class="field-label">Marital status</label><input class="field" type="text" name="marital_status" /></div>
+          <div class="field-wrap"><label class="field-label">Occupation</label><input class="field" type="text" name="occupation" /></div>
+        </div>
+        <div class="grid-2">
+          <div class="field-wrap"><label class="field-label">Driver's licence — date first issued</label><input class="field" type="text" name="licence_date" /></div>
+          <div class="field-wrap"><label class="field-label">Licence code</label><input class="field" type="text" name="licence_code" /></div>
+        </div>
+        <div class="grid-2">
+          <div class="field-wrap"><label class="field-label">Physical address</label><input class="field" type="text" name="physical_address" required /></div>
+          <div class="field-wrap"><label class="field-label">Postal address</label><input class="field" type="text" name="postal_address" /></div>
+        </div>
+        <div class="grid-3">
+          <div class="field-wrap"><label class="field-label">Telephone (home)</label><input class="field" type="tel" name="tel_home" /></div>
+          <div class="field-wrap"><label class="field-label">Telephone (work)</label><input class="field" type="tel" name="tel_work" /></div>
+          <div class="field-wrap"><label class="field-label">Cell number</label><input class="field" type="tel" name="cell" required /></div>
+        </div>
+        <div class="field-wrap"><label class="field-label">Email address</label><input class="field" type="email" name="email" required /></div>
+
+        <div class="form-section-title">Insurance History</div>
+        <div class="grid-2">
+          <div class="field-wrap"><label class="field-label">Current insurer &amp; duration</label><input class="field" type="text" name="current_insurer" /></div>
+          <div class="field-wrap"><label class="field-label">Previous insurer &amp; duration</label><input class="field" type="text" name="previous_insurer" /></div>
+        </div>
+        <div class="grid-2">
+          <div class="field-wrap"><label class="field-label">Claims or losses in the last 3 years</label><input class="field" type="text" name="claims_losses" /></div>
+          <div class="field-wrap"><label class="field-label">Amount claimed (if any)</label><input class="field" type="text" name="claims_amount" /></div>
+        </div>
+
+        <div class="form-section-title">Home / Property Details <span style="font-weight:400; text-transform:none; letter-spacing:0; color:var(--ink-soft);">(skip if you only need motor cover)</span></div>
+        <div class="grid-2">
+          <div class="field-wrap"><label class="field-label">Type of residence</label><input class="field" type="text" name="residence_type" /></div>
+          <div class="field-wrap"><label class="field-label">Level (ground, 1st floor, etc.)</label><input class="field" type="text" name="residence_level" /></div>
+        </div>
+        <div class="grid-2">
+          <div class="field-wrap"><label class="field-label">Roof construction</label><input class="field" type="text" name="roof_construction" /></div>
+          <div class="field-wrap"><label class="field-label">Wall construction</label><input class="field" type="text" name="wall_construction" /></div>
+        </div>
+        <div class="form-section-title" style="margin-top:18px; font-size:0.74rem;">Security measures at the property</div>
+        <div class="grid-3">
+          <div class="field-wrap"><label class="field-label">Burglar bars on all windows?</label><input class="field" type="text" name="burglar_bars" placeholder="Yes / No" /></div>
+          <div class="field-wrap"><label class="field-label">Security gates on all doors?</label><input class="field" type="text" name="security_gates" placeholder="Yes / No" /></div>
+          <div class="field-wrap"><label class="field-label">Surrounding wall &amp; gates?</label><input class="field" type="text" name="surrounding_wall" placeholder="Yes / No" /></div>
+        </div>
+        <div class="grid-3">
+          <div class="field-wrap"><label class="field-label">Access control to property?</label><input class="field" type="text" name="access_control" placeholder="Yes / No" /></div>
+          <div class="field-wrap"><label class="field-label">Electric fencing?</label><input class="field" type="text" name="electric_fencing" placeholder="Yes / No" /></div>
+          <div class="field-wrap"><label class="field-label">Security guards on premises?</label><input class="field" type="text" name="security_guards" placeholder="Yes / No" /></div>
+        </div>
+        <div class="grid-2">
+          <div class="field-wrap"><label class="field-label">Linked alarm?</label><input class="field" type="text" name="linked_alarm" placeholder="Yes / No" /></div>
+          <div class="field-wrap"><label class="field-label">Within 500m of a shoreline, river, lake or dam?</label><input class="field" type="text" name="near_water" placeholder="Yes / No" /></div>
+        </div>
+        <div class="grid-2">
+          <div class="field-wrap"><label class="field-label">Sum insured — contents (R)</label><input class="field" type="text" name="sum_contents" /></div>
+          <div class="field-wrap"><label class="field-label">Sum insured — buildings (R)</label><input class="field" type="text" name="sum_buildings" /></div>
+        </div>
+        <div class="grid-2">
+          <div class="field-wrap"><label class="field-label">Accidental damage cover required?</label><input class="field" type="text" name="accidental_damage" placeholder="Yes / No" /></div>
+          <div class="field-wrap"><label class="field-label">All-risks cover required?</label><input class="field" type="text" name="all_risks" placeholder="Yes / No" /></div>
+        </div>
+
+        <div class="form-section-title">Vehicle Details <span style="font-weight:400; text-transform:none; letter-spacing:0; color:var(--ink-soft);">(skip if you only need home cover)</span></div>
+        <div id="vehicle-list">
+          <div class="vehicle-repeat">
+            <div class="form-section-title">Vehicle 1</div>
+            <div class="grid-3">
+              <div class="field-wrap"><label class="field-label">Year</label><input class="field" name="vehicle_year_1" type="text" /></div>
+              <div class="field-wrap"><label class="field-label">Make</label><input class="field" name="vehicle_make_1" type="text" /></div>
+              <div class="field-wrap"><label class="field-label">Model</label><input class="field" name="vehicle_model_1" type="text" /></div>
+            </div>
+            <div class="grid-3">
+              <div class="field-wrap"><label class="field-label">Registration number</label><input class="field" name="vehicle_reg_1" type="text" /></div>
+              <div class="field-wrap"><label class="field-label">Colour</label><input class="field" name="vehicle_colour_1" type="text" /></div>
+              <div class="field-wrap"><label class="field-label">Estimated value (R)</label><input class="field" name="vehicle_value_1" type="text" /></div>
+            </div>
+            <div class="grid-3">
+              <div class="field-wrap"><label class="field-label">Use (private / business)</label><input class="field" name="vehicle_use_1" type="text" /></div>
+              <div class="field-wrap"><label class="field-label">Finance company (if any)</label><input class="field" name="vehicle_finance_1" type="text" /></div>
+              <div class="field-wrap"><label class="field-label">Regular driver</label><input class="field" name="vehicle_driver_1" type="text" /></div>
+            </div>
+            <div class="grid-2">
+              <div class="field-wrap"><label class="field-label">Security features fitted</label><input class="field" name="vehicle_security_1" type="text" /></div>
+              <div class="field-wrap"><label class="field-label">Where is it parked overnight?</label><input class="field" name="vehicle_parking_1" type="text" /></div>
+            </div>
+            <div class="field-wrap"><label class="field-label">Any claims in the last 3 years?</label><input class="field" name="vehicle_claims_1" type="text" /></div>
+          </div>
+        </div>
+        <button type="button" class="add-vehicle-btn" id="add-vehicle">+ Add another vehicle</button>
+
+        <div class="form-section-title">Declaration &amp; Consent</div>
+        <p style="font-size:0.85rem;">I warrant that all the answers given are true, and that I do not know of any material facts — even though specific questions about them have not been asked — that should be communicated to the insurer.</p>
+        <div class="consent-line">
+          <input type="checkbox" id="consent-personal" required />
+          <label for="consent-personal">I confirm the above and consent to Cuppan Insurance Consultants CC processing and sharing my personal information for the purpose of preparing this quotation, in line with the <a href="privacy.html">Privacy Policy</a>.</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit Quote Request</button>
+        <div class="form-success" id="personal-success">Thank you — your quote request has been received. We'll be in touch shortly.</div>
+      </form>
+    </div>
+
+    <!-- ============ BUSINESS QUOTE FORM ============ -->
+    <div class="quote-panel" id="panel-business">
+      <form class="form-card" action="https://formspree.io/f/your-form-id" method="POST" data-success="business-success" id="business">
+
+        <div class="form-section-title">Cover Required</div>
+        <div class="field-wrap">
+          <label class="field-label">Which type of cover are you enquiring about?</label>
+          <select class="field" name="cover_type" required>
+            <option value="">Select one</option>
+            <option>Commercial</option>
+            <option>Transport</option>
+            <option>Construction &amp; Engineering</option>
+            <option>Agri Risk</option>
+            <option>Travel</option>
+          </select>
+        </div>
+
+        <div class="form-section-title">Business / Contact Details</div>
+        <div class="grid-2">
+          <div class="field-wrap"><label class="field-label">Business name (if applicable)</label><input class="field" type="text" name="business_name" /></div>
+          <div class="field-wrap"><label class="field-label">Nature of business</label><input class="field" type="text" name="nature_of_business" /></div>
+        </div>
+        <div class="grid-2">
+          <div class="field-wrap"><label class="field-label">Contact person</label><input class="field" type="text" name="contact_person" required /></div>
+          <div class="field-wrap"><label class="field-label">ID or company registration number</label><input class="field" type="text" name="reg_number" /></div>
+        </div>
+        <div class="field-wrap"><label class="field-label">Physical / business address</label><input class="field" type="text" name="address" /></div>
+        <div class="grid-2">
+          <div class="field-wrap"><label class="field-label">Cell number</label><input class="field" type="tel" name="cell" required /></div>
+          <div class="field-wrap"><label class="field-label">Email address</label><input class="field" type="email" name="email" required /></div>
+        </div>
+
+        <div class="form-section-title">About the Cover</div>
+        <div class="grid-2">
+          <div class="field-wrap"><label class="field-label">Current insurer (if any)</label><input class="field" type="text" name="current_insurer" /></div>
+          <div class="field-wrap"><label class="field-label">Estimated sum insured / value of assets (R)</label><input class="field" type="text" name="sum_insured" /></div>
+        </div>
+        <div class="field-wrap">
+          <label class="field-label">Tell us more about what you need covered</label>
+          <textarea class="field" name="details" rows="5" placeholder="E.g. fleet size and vehicle types, project value and duration, crops or livestock, travel dates and destination, etc."></textarea>
+        </div>
+
+        <div class="form-section-title">Consent</div>
+        <div class="consent-line">
+          <input type="checkbox" id="consent-business" required />
+          <label for="consent-business">I consent to Cuppan Insurance Consultants CC processing and sharing my information for the purpose of preparing this quotation, in line with the <a href="privacy.html">Privacy Policy</a>.</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit Quote Request</button>
+        <div class="form-success" id="business-success">Thank you — your quote request has been received. We'll be in touch shortly.</div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<section class="section-pale" style="padding:48px 0;">
+  <div class="container text-center">
+    <h3>Prefer to speak to us directly?</h3>
+    <p>Call Michelle on 083 301 3750 or Debbie on 083 554 3614 — we're available any day, any time.</p>
+    <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+      <a href="tel:0833013750" class="btn btn-outline-navy">Call Michelle</a>
+      <a href="tel:0835543614" class="btn btn-outline-navy">Call Debbie</a>
+      <a href="mailto:cuppan@mweb.co.za" class="btn btn-outline-navy">Email Us</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Cuppan Insurance Consultants CC logo" />
+        <p>Personal, expert insurance advice for South African individuals and businesses since 1991.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="quote.html">Get a Quote</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy &amp; POPIA</a></li>
+          <li><a href="compliance.html">Compliance &amp; Disclosures</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:0833013750">083 301 3750 (Michelle)</a></li>
+          <li><a href="tel:0835543614">083 554 3614 (Debbie)</a></li>
+          <li><a href="mailto:cuppan@mweb.co.za">cuppan@mweb.co.za</a></li>
+          <li>Available any day, any time for callbacks</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Cuppan Insurance Consultants CC. All rights reserved.</span>
+      <span class="footer-compliance">Authorised Financial Services Provider &middot; FSP 25670 &middot; Reg No. 2006/016581/23</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
